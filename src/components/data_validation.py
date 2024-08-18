@@ -37,16 +37,16 @@ class DataValidation:
 
     def valuesFromSchema(self):
         """
-                        Method Name: valuesFromSchema
-                        Description: This method extracts all the relevant information from the pre-defined "Schema" file.
-                        Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
-                        On Failure: Raise ValueError,KeyError,Exception
+            Method Name: valuesFromSchema
+            Description: This method extracts all the relevant information from the pre-defined "Schema" file.
+            Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
+            On Failure: Raise ValueError,KeyError,Exception
 
-                         Written By: Ketan Kansal
-                        Version: 1.0
-                        Revisions: None
+            Written By: Ketan Kansal
+            Version: 1.0
+            Revisions: None
 
-                                """
+        """
         try:
             with open(self.data_validation_config.schema_config_file_path, 'r') as f:
                 dic = json.load(f)
